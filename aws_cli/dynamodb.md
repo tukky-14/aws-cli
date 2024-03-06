@@ -13,6 +13,12 @@
   ```
 
 - テーブルのスキャン
+
   ```
   aws dynamodb scan --table-name diary
+  ```
+
+- レコード数のカウント
+  ```
+  aws dynamodb scan --table-name diary --select "COUNT"
   ```
